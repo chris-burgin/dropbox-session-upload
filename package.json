@@ -11,5 +11,6 @@
   "dependencies": {
     "dropbox": "^2.5.9",
     "stream": "0.0.2"
-  }
+  },
+  "repository": "chrisburgin95/dropbox-session-upload.git"
 }
