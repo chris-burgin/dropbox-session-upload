@@ -1,0 +1,15 @@
+{
+  "name": "dropbox_session_upload",
+  "version": "1.0.0",
+  "description": "Wrapper around the dropbox upload_session API to help upload files over 150mb to dropbox.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Burgin",
+  "license": "ISC",
+  "dependencies": {
+    "dropbox": "^2.5.9",
+    "stream": "0.0.2"
+  }
+}
