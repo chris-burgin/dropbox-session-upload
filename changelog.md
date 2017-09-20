@@ -1,3 +1,9 @@
 # Changelog
+## 2.0.1
+- Added eslint support.
+- Updated formating.
+- Added detailed comments.
+- Added debugMode feature.
+
 ## 2.0.0
-- This is the first offical release. No "changes" for this release
+- This is the first offical release. No "changes" for this release.

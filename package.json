@@ -1,6 +1,6 @@
 {
   "name": "dropbox_session_upload",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Node wrapper around the dropbox upload session API to help concurrently upload files over 150mb to dropbox.",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,14 @@
   "dependencies": {
     "dropbox": "^2.5.9",
     "stream": "0.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.7.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
   },
   "repository": "chrisburgin95/dropbox-session-upload.git"
 }

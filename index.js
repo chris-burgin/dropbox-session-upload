@@ -1,4 +1,2 @@
-'use strict'
-
-// export
-module.exports = require('./lib/index')
+// exposes the entry point for the package
+module.exports = require("./lib/index")

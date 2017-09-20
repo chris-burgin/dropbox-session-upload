@@ -37,7 +37,7 @@ const files = [
 ]
 
 // upload the files
-dropboxSessionUpload(files, process.env.DROPBOXTOKEN)
+dropboxSessionUpload(files, process.env.DROPBOXTOKEN, true /* debug mode, defaults to false */)
   .catch(error => console.log(error)) // error
   .then(() => console.log("Done Uploading!")) // done uploading
 ```
