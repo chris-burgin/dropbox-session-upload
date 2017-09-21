@@ -13,7 +13,7 @@
     "stream": "0.0.2"
   },
   "devDependencies": {
-    "eslint": "^4.7.1",
+    "eslint": "^4.7.2",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
