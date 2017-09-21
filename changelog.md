@@ -1,4 +1,7 @@
 # Changelog
+## 2.1.0
+- Upload progress is now present to the user through events.
+
 ## 2.0.1
 - Added eslint support.
 - Updated formating.
