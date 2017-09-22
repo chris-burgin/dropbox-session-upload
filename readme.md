@@ -12,13 +12,12 @@ of the box.
 `npm install dropbox_session_upload`
 
 ## Usage
-
-### Upload Files
-_This Example can be found in `/example/index.js`_
+### Upload Files Basic
+_This Example can be found in `/examples/simple.js`_
 ```javascript
 // import modules
 const fs = require("fs")
-const dropboxSessionUpload = require("dropbox_session_upload")
+const {upload} = require("dropbox_session_upload")
 
 // setup files to upload
 const files = [
@@ -37,7 +36,49 @@ const files = [
 ]
 
 // upload the files
-dropboxSessionUpload(files, process.env.DROPBOXTOKEN, true /* debug mode, defaults to false */)
-  .catch(error => console.log(error)) // error
-  .then(() => console.log("Done Uploading!")) // done uploading
+upload(files, process.env.DROPBOXTOKEN, true /* debug mode, defaults to false */)
+  .catch(error => console.log(error))
+  .then(() => console.log("Done Uploading!"))
 ```
+
+### Upload with Progress Tracking
+_This Example can be found in `/examples/progressTracking.js`
+Adding progress tracking is simple, but due to the dropbox api progress will 
+only be updated every 8mb. This is the size of chunks this packages uploads 
+at once. So you will find that progress jumps in 8mb chunks. While annoying 
+it can still be helpful to know where your file is at in the upload process.
+
+```javascript
+// import modules
+const fs = require("fs")
+const { upload, progress } = require("dropbox_session_upload")
+
+// setup files to upload
+const files = [
+  {
+    file: fs.createReadStream("./datafile.txt"),
+    saveLocation: "/datafile1.txt",
+    id: "1" // required for progress
+  },
+  {
+    file: fs.createReadStream("./datafile.txt"),
+    saveLocation: "/datafile1.txt",
+    id: "2" // required for progress
+  },
+  {
+    file: fs.createReadStream("./datafile.txt"),
+    saveLocation: "/datafile1.txt",
+    id: "3" // required for progress
+  }
+]
+
+// upload the files
+upload(files, process.env.DROPBOXTOKEN)
+  .catch(error => console.log(error))
+  .then(() => console.log("Files Done!"))
+
+// listen for updates to the progress
+// this will return `id` and `percentage`
+progress(data => console.log(data))
+```
+
