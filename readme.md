@@ -43,6 +43,7 @@ upload(files, process.env.DROPBOXTOKEN, true /* debug mode, defaults to false */
 
 ### Upload with Progress Tracking
 _This Example can be found in `/examples/progressTracking.js`_
+
 Adding progress tracking is simple, but due to the dropbox api progress will 
 only be updated every 8mb. This is the size of chunks this packages uploads 
 at once. So you will find that progress jumps in 8mb chunks. While annoying 
