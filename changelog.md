@@ -1,7 +1,10 @@
 # Changelog
+## 2.1.2
+- Documentation Markdown fix.
+
 ## 2.1.1
 - Documentation Markdown fix.
-- 
+
 ## 2.1.0
 - Upload progress is now present to the user through events.
 - Modified how the api is imported.
