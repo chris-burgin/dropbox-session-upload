@@ -1,4 +1,8 @@
 # Changelog
+## 2.1.3
+- Implemented Prettier.
+- Formated files with Prettier.
+
 ## 2.1.2
 - Documentation Markdown fix.
 

@@ -7,18 +7,18 @@ const files = [
   {
     file: fs.createReadStream("./datafile.txt"),
     saveLocation: "/datafile1.txt",
-    id: "1" // required for progress
+    id: "1", // required for progress
   },
   {
     file: fs.createReadStream("./datafile.txt"),
     saveLocation: "/datafile1.txt",
-    id: "2" // required for progress
+    id: "2", // required for progress
   },
   {
     file: fs.createReadStream("./datafile.txt"),
     saveLocation: "/datafile1.txt",
-    id: "3" // required for progress
-  }
+    id: "3", // required for progress
+  },
 ]
 
 // upload the files
