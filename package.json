@@ -1,6 +1,6 @@
 {
   "name": "dropbox_session_upload",
-  "version": "2.1.3",
+  "version": "2.2.0",
   "description": "Node wrapper around the dropbox upload session API to help concurrently upload files over 150mb to dropbox.",
   "main": "index.js",
   "scripts": {
