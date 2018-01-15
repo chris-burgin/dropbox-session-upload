@@ -83,3 +83,5 @@ upload(files, process.env.DROPBOXTOKEN)
 progress(data => console.log(data))
 ```
 
+### Things to note when uploading
+- This library will automatically strip out the following characters from `saveLocation` `* | & ! @ # $ % ^ * ( ) [ ] { } | - _ = + < > ' " < >` to comply with dropbox file name requirements.

@@ -1,4 +1,7 @@
 # Changelog
+## 2.2.0
+- Implemented automatic string cleaning to prevent file save errors.
+
 ## 2.1.3
 - Implemented Prettier.
 - Formated files with Prettier.
