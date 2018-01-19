@@ -1,4 +1,8 @@
 # Changelog
+## 2.2.1
+- Removed the filter for the `_` character.
+- - Removed the filter for the `-` character.
+
 ## 2.2.0
 - Implemented automatic string cleaning to prevent file save errors.
 
